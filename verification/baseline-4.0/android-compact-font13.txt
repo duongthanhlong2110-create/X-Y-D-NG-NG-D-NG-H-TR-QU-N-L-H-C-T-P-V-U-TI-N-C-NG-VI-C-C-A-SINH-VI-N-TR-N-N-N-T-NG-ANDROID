@@ -1,0 +1,20 @@
+
+vn.edu.studymate.DatabaseTest:......
+vn.edu.studymate.EnvironmentLifecycleTest:...
+vn.edu.studymate.MigrationTest:...
+vn.edu.studymate.NormalizedDatabaseTest:..........
+vn.edu.studymate.PerformanceTest:.
+vn.edu.studymate.ReminderIntegrationTest:..
+vn.edu.studymate.ReportDatabaseTest:........
+vn.edu.studymate.ReportUiTest:s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+.
+vn.edu.studymate.RotationTest:.
+vn.edu.studymate.UiSmokeTest:.
+
+Time: 73.134
+
+OK (36 tests)
+
+

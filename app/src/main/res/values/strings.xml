@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">StudyMate</string>
+    <string name="activity_editor_text_1">Lưu thông tin</string>
+    <string name="activity_login_text_2">Học có kế hoạch. Tiến bộ mỗi ngày.</string>
+    <string name="activity_login_hint_3">Họ và tên</string>
+    <string name="activity_login_hint_4">Email</string>
+    <string name="activity_login_hint_5">Mật khẩu (tối thiểu 6 ký tự)</string>
+    <string name="activity_login_text_6">Đăng nhập</string>
+    <string name="activity_login_text_7">Chưa có tài khoản? Đăng ký</string>
+    <string name="activity_login_text_8">Tài khoản mẫu: demo@studymate.vn\nMật khẩu: Demo123!\n\nDữ liệu được lưu riêng trên thiết bị này.</string>
+    <string name="bottom_nav_title_9">Tổng quan</string>
+    <string name="bottom_nav_title_10">Công việc</string>
+    <string name="bottom_nav_title_11">Lịch học</string>
+    <string name="bottom_nav_title_12">Tiện ích</string>
+</resources>

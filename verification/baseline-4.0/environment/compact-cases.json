@@ -1,0 +1,328 @@
+[
+  {
+    "hostTime": "2026-09-30T16:10:15",
+    "case": "ENV",
+    "step": "apkSha256",
+    "result": "ab3da0b9ac76dc70b5b01f164b3d55e13601879a11133efc4dcacf81272ff0f7"
+  },
+  {
+    "hostTime": "2026-09-30T16:10:16",
+    "case": "ENV",
+    "step": "device",
+    "result": "Android SDK built for x86_64\n33\nPhysical size: 720x1280\nPhysical density: 320"
+  },
+  {
+    "hostTime": "2026-09-30T16:10:17",
+    "case": "AD02-foreground",
+    "step": "oracle",
+    "result": {
+      "action": "seed",
+      "user": 20,
+      "id": 41,
+      "due": 1790759430324,
+      "now": 1790759415376
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:10:18",
+    "case": "AD02-foreground",
+    "step": "open",
+    "result": "Starting: Intent { cmp=vn.edu.studymate/.ui.LoginActivity }\nStatus: ok\nLaunchState: COLD\nActivity: vn.edu.studymate/.ui.MainActivity\nTotalTime: 880\nWaitTime: 883\nComplete"
+  },
+  {
+    "hostTime": "2026-09-30T16:10:46",
+    "case": "AD02-foreground",
+    "step": "delivery",
+    "result": {
+      "id": 41,
+      "due": 1790759430324,
+      "received": 1790759441086,
+      "delayMs": 10762
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:10:46",
+    "case": "AD02-foreground",
+    "step": "result",
+    "result": "PASS"
+  },
+  {
+    "hostTime": "2026-09-30T16:10:49",
+    "case": "AD02-background",
+    "step": "oracle",
+    "result": {
+      "action": "seed",
+      "user": 21,
+      "id": 42,
+      "due": 1790759462103,
+      "now": 1790759447149
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:10:50",
+    "case": "AD02-background",
+    "step": "open",
+    "result": "Starting: Intent { cmp=vn.edu.studymate/.ui.LoginActivity }\nStatus: ok\nLaunchState: COLD\nActivity: vn.edu.studymate/.ui.MainActivity\nTotalTime: 1039\nWaitTime: 1042\nComplete"
+  },
+  {
+    "hostTime": "2026-09-30T16:11:18",
+    "case": "AD02-background",
+    "step": "delivery",
+    "result": {
+      "id": 42,
+      "due": 1790759462103,
+      "received": 1790759472663,
+      "delayMs": 10560
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:11:18",
+    "case": "AD02-background",
+    "step": "result",
+    "result": "PASS"
+  },
+  {
+    "hostTime": "2026-09-30T16:11:19",
+    "case": "AD02-screen-off",
+    "step": "oracle",
+    "result": {
+      "action": "seed",
+      "user": 22,
+      "id": 43,
+      "due": 1790759492732,
+      "now": 1790759477775
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:11:20",
+    "case": "AD02-screen-off",
+    "step": "open",
+    "result": "Starting: Intent { cmp=vn.edu.studymate/.ui.LoginActivity }\nStatus: ok\nLaunchState: COLD\nActivity: vn.edu.studymate/.ui.MainActivity\nTotalTime: 1057\nWaitTime: 1058\nComplete"
+  },
+  {
+    "hostTime": "2026-09-30T16:11:48",
+    "case": "AD02-screen-off",
+    "step": "delivery",
+    "result": {
+      "id": 43,
+      "due": 1790759492732,
+      "received": 1790759503299,
+      "delayMs": 10567
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:11:48",
+    "case": "AD02-screen-off",
+    "step": "result",
+    "result": "PASS"
+  },
+  {
+    "hostTime": "2026-09-30T16:11:50",
+    "case": "AD01-denied",
+    "step": "oracle",
+    "result": {
+      "action": "seed",
+      "user": 23,
+      "id": 44,
+      "due": 1790759523697,
+      "now": 1790759508761
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:11:51",
+    "case": "AD01-denied",
+    "step": "open",
+    "result": "Starting: Intent { cmp=vn.edu.studymate/.ui.LoginActivity }\nStatus: ok\nLaunchState: COLD\nActivity: com.android.permissioncontroller/.permission.ui.GrantPermissionsActivity\nTotalTime: 1010\nWaitTime: 1056\nComplete"
+  },
+  {
+    "hostTime": "2026-09-30T16:12:17",
+    "case": "AD01-denied",
+    "step": "row",
+    "result": [
+      44,
+      1790759523697,
+      0,
+      0
+    ]
+  },
+  {
+    "hostTime": "2026-09-30T16:12:17",
+    "case": "AD01-denied",
+    "step": "result",
+    "result": "PASS no notification while denied"
+  },
+  {
+    "hostTime": "2026-09-30T16:12:45",
+    "case": "AD01-granted-again",
+    "step": "delivery",
+    "result": {
+      "id": 44,
+      "due": 1790759523697,
+      "received": 1790759561037,
+      "delayMs": 37340
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:12:45",
+    "case": "AD01-granted-again",
+    "step": "result",
+    "result": "PASS"
+  },
+  {
+    "hostTime": "2026-09-30T16:12:47",
+    "case": "AD06-force-stop",
+    "step": "oracle",
+    "result": {
+      "action": "seed",
+      "user": 24,
+      "id": 45,
+      "due": 1790759580505,
+      "now": 1790759565555
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:12:48",
+    "case": "AD06-force-stop",
+    "step": "open",
+    "result": "Starting: Intent { cmp=vn.edu.studymate/.ui.LoginActivity }\nStatus: ok\nLaunchState: COLD\nActivity: vn.edu.studymate/.ui.MainActivity\nTotalTime: 1006\nWaitTime: 1008\nComplete"
+  },
+  {
+    "hostTime": "2026-09-30T16:13:14",
+    "case": "AD06-force-stop",
+    "step": "rowWhileStopped",
+    "result": [
+      45,
+      1790759580505,
+      0,
+      0
+    ]
+  },
+  {
+    "hostTime": "2026-09-30T16:13:16",
+    "case": "AD06-reopen",
+    "step": "delivery",
+    "result": {
+      "id": 45,
+      "due": 1790759580505,
+      "received": 1790759593069,
+      "delayMs": 12564
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:13:16",
+    "case": "AD06-reopen",
+    "step": "result",
+    "result": "PASS"
+  },
+  {
+    "hostTime": "2026-09-30T16:13:17",
+    "case": "AD05-reboot",
+    "step": "oracle",
+    "result": {
+      "action": "seed",
+      "user": 25,
+      "id": 46,
+      "due": 1790759655746,
+      "now": 1790759595788
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:13:18",
+    "case": "AD05-reboot",
+    "step": "open",
+    "result": "Starting: Intent { cmp=vn.edu.studymate/.ui.LoginActivity }\nStatus: ok\nLaunchState: COLD\nActivity: vn.edu.studymate/.ui.MainActivity\nTotalTime: 995\nWaitTime: 1005\nComplete"
+  },
+  {
+    "hostTime": "2026-09-30T16:13:18",
+    "case": "AD05-reboot",
+    "step": "bootIdBefore",
+    "result": "8422b1ad-4244-4cca-a22c-e93be8b81827"
+  },
+  {
+    "hostTime": "2026-09-30T16:14:01",
+    "case": "AD05-reboot",
+    "step": "bootIdAfter",
+    "result": "a7c20624-fcde-4194-9d79-7e7ddb2decfb"
+  },
+  {
+    "hostTime": "2026-09-30T16:14:23",
+    "case": "AD05-reboot",
+    "step": "delivery",
+    "result": {
+      "id": 46,
+      "due": 1790759655746,
+      "received": 1790759655816,
+      "delayMs": 70
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:14:23",
+    "case": "AD05-reboot",
+    "step": "result",
+    "result": "PASS"
+  },
+  {
+    "hostTime": "2026-09-30T16:14:24",
+    "case": "AD07-timezone",
+    "step": "oracle",
+    "result": {
+      "action": "seed",
+      "user": 26,
+      "id": 47,
+      "due": 1790759678280,
+      "now": 1790759663335
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:14:25",
+    "case": "AD07-timezone",
+    "step": "open",
+    "result": "Starting: Intent { cmp=vn.edu.studymate/.ui.LoginActivity }\nStatus: ok\nLaunchState: COLD\nActivity: vn.edu.studymate/.ui.MainActivity\nTotalTime: 1049\nWaitTime: 1053\nComplete"
+  },
+  {
+    "hostTime": "2026-09-30T16:14:26",
+    "case": "AD07-timezone",
+    "step": "before",
+    "result": [
+      47,
+      1790759678280,
+      0,
+      0
+    ]
+  },
+  {
+    "hostTime": "2026-09-30T16:14:26",
+    "case": "AD07-timezone",
+    "step": "change",
+    "result": ""
+  },
+  {
+    "hostTime": "2026-09-30T16:14:44",
+    "case": "AD07-timezone",
+    "step": "delivery",
+    "result": {
+      "id": 47,
+      "due": 1790759678280,
+      "received": 1790759681635,
+      "delayMs": 3355
+    }
+  },
+  {
+    "hostTime": "2026-09-30T16:14:44",
+    "case": "AD07-timezone",
+    "step": "result",
+    "result": "PASS"
+  },
+  {
+    "hostTime": "2026-09-30T16:14:47",
+    "case": "AD09-offline",
+    "step": "result",
+    "result": "PASS persisted record unchanged after reopening without network"
+  },
+  {
+    "hostTime": "2026-09-30T16:14:47",
+    "case": "DONE",
+    "step": "result",
+    "result": "Environment scenarios completed"
+  }
+]

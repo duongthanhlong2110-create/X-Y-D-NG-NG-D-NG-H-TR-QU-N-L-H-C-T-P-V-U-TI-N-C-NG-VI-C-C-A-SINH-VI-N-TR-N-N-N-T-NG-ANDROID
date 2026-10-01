@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vn.edu.studymate.ReportRulesTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-10-01T11:05:43.076Z" hostname="DUONGTHANHLONG" time="0.02">
+  <properties/>
+  <testcase name="NV07_reportDashboard" classname="vn.edu.studymate.ReportRulesTest" time="0.009"/>
+  <testcase name="allOverdueOutrankNonOverdue" classname="vn.edu.studymate.ReportRulesTest" time="0.001"/>
+  <testcase name="NV02_stateBonus" classname="vn.edu.studymate.ReportRulesTest" time="0.0"/>
+  <testcase name="NV04_scoreDeadlineIdTies" classname="vn.edu.studymate.ReportRulesTest" time="0.003"/>
+  <testcase name="NV11_changeDeadlineChangesTrigger" classname="vn.edu.studymate.ReportRulesTest" time="0.001"/>
+  <testcase name="reminderOptionsMatchWord" classname="vn.edu.studymate.ReportRulesTest" time="0.002"/>
+  <testcase name="NV12_absentOrDisabledNeverReminds" classname="vn.edu.studymate.ReportRulesTest" time="0.0"/>
+  <testcase name="NV06_reportScoresAndOrder" classname="vn.edu.studymate.ReportRulesTest" time="0.0"/>
+  <testcase name="NV01_reportBoundaryLabels" classname="vn.edu.studymate.ReportRulesTest" time="0.001"/>
+  <testcase name="DL07_invalidDataRejected" classname="vn.edu.studymate.ReportRulesTest" time="0.001"/>
+  <testcase name="NV05_missingDeadlineLastOnEqualScore" classname="vn.edu.studymate.ReportRulesTest" time="0.001"/>
+  <testcase name="NV03_completedRemoved" classname="vn.edu.studymate.ReportRulesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

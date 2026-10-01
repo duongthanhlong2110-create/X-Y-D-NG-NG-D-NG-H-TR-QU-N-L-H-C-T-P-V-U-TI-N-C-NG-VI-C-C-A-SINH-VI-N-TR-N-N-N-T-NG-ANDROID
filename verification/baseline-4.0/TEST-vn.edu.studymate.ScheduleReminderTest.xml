@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vn.edu.studymate.ScheduleReminderTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-09-30T09:06:28.628Z" hostname="DUONGTHANHLONG" time="0.012">
+  <properties/>
+  <testcase name="taskCatchupWindow" classname="vn.edu.studymate.ScheduleReminderTest" time="0.0"/>
+  <testcase name="distinctDates" classname="vn.edu.studymate.ScheduleReminderTest" time="0.008"/>
+  <testcase name="disabledAndCompleted" classname="vn.edu.studymate.ScheduleReminderTest" time="0.0"/>
+  <testcase name="invalidRangeRejected" classname="vn.edu.studymate.ScheduleReminderTest" time="0.001"/>
+  <testcase name="recurringReminderAndHandledOccurrence" classname="vn.edu.studymate.ScheduleReminderTest" time="0.0"/>
+  <testcase name="identicalAndPartialOverlap" classname="vn.edu.studymate.ScheduleReminderTest" time="0.0"/>
+  <testcase name="examVersusClass" classname="vn.edu.studymate.ScheduleReminderTest" time="0.0"/>
+  <testcase name="containment" classname="vn.edu.studymate.ScheduleReminderTest" time="0.0"/>
+  <testcase name="touchingDoesNotOverlap" classname="vn.edu.studymate.ScheduleReminderTest" time="0.0"/>
+  <testcase name="noCommonWeekday" classname="vn.edu.studymate.ScheduleReminderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

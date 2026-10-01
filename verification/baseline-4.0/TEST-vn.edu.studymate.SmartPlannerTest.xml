@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vn.edu.studymate.SmartPlannerTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-09-30T09:06:28.641Z" hostname="DUONGTHANHLONG" time="0.209">
+  <properties/>
+  <testcase name="weightedGrades" classname="vn.edu.studymate.SmartPlannerTest" time="0.001"/>
+  <testcase name="exactDeadlineAndBoundaries" classname="vn.edu.studymate.SmartPlannerTest" time="0.0"/>
+  <testcase name="importancePrecedesDeadlineWithinGroup" classname="vn.edu.studymate.SmartPlannerTest" time="0.0"/>
+  <testcase name="completedExcluded" classname="vn.edu.studymate.SmartPlannerTest" time="0.0"/>
+  <testcase name="progressAddsFivePoints" classname="vn.edu.studymate.SmartPlannerTest" time="0.0"/>
+  <testcase name="passwordHash" classname="vn.edu.studymate.SmartPlannerTest" time="0.206"/>
+  <testcase name="remaining" classname="vn.edu.studymate.SmartPlannerTest" time="0.001"/>
+  <testcase name="stableTies" classname="vn.edu.studymate.SmartPlannerTest" time="0.0"/>
+  <testcase name="groupPrecedesImportance" classname="vn.edu.studymate.SmartPlannerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

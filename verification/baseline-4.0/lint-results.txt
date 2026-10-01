@@ -1,0 +1,174 @@
+S:\outputs\StudyMate-HoanThien\app\src\main\AndroidManifest.xml:5: Warning: The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher. [DataExtractionRules]
+    <application android:allowBackup="false" android:label="@string/app_name" android:icon="@drawable/ic_school" android:supportsRtl="true" android:theme="@style/Theme.StudyMate">
+                                      ~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\TaskListActivity.java:235: Warning: It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort. [NotifyDataSetChanged]
+                  adapter.notifyDataSetChanged();
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotifyDataSetChanged":
+   The RecyclerView adapter's onNotifyDataSetChanged method does not specify
+   what about the data set has changed, forcing any observers to assume that
+   all existing items and structure may no longer be valid. `LayoutManager`s
+   will be forced to fully rebind and relayout all visible views.
+
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:110: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+      hasDeadline.setText("Có deadline");
+                          ~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:180: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+          "Chọn Không nhắc ở mốc chính để tắt mọi mốc. Các mốc trùng nhau chỉ nhắc một lần. Không"
+          ^
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:180: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+          "Chọn Không nhắc ở mốc chính để tắt mọi mốc. Các mốc trùng nhau chỉ nhắc một lần. Không"
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:181: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+              + " có deadline thì không nhắc. Nhắc có thể trễ do hệ thống Android. Múi giờ: "
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:197: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    extraReminders.setText("Mốc nhắc bổ sung (" + extraOffsets.size() + ")");
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:197: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    extraReminders.setText("Mốc nhắc bổ sung (" + extraOffsets.size() + ")");
+                           ~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:315: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    if (validFrom != null) validFrom.setText("Áp dụng từ: " + e.validFrom);
+                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:315: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    if (validFrom != null) validFrom.setText("Áp dụng từ: " + e.validFrom);
+                                             ~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:316: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    if (validTo != null) validTo.setText("Đến ngày: " + e.validTo);
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:316: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    if (validTo != null) validTo.setText("Đến ngày: " + e.validTo);
+                                         ~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:317: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    if (examEnd != null) examEnd.setText("Kết thúc thi: " + Ui.date(e.endAt));
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:317: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    if (examEnd != null) examEnd.setText("Kết thúc thi: " + Ui.date(e.endAt));
+                                         ~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:319: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+      due.setText("Ngày giờ: " + Ui.date(e.dueAt));
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:319: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+      due.setText("Ngày giờ: " + Ui.date(e.dueAt));
+                  ~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:322: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    if (start != null) start.setText("Bắt đầu: " + Ui.time(e.startMinute));
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:323: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    if (end != null) end.setText("Kết thúc: " + Ui.time(e.endMinute));
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\EditorActivity.java:323: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    if (end != null) end.setText("Kết thúc: " + Ui.time(e.endMinute));
+                                 ~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\LoginActivity.java:61: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+      error.setText("Vui lòng nhập email hợp lệ.");
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\LoginActivity.java:65: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+      error.setText("Mật khẩu phải có ít nhất 6 ký tự.");
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\LoginActivity.java:69: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+      error.setText("Vui lòng nhập họ và tên.");
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\LoginActivity.java:73: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+      error.setText("Mật khẩu xác nhận chưa khớp.");
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\LoginActivity.java:79: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    error.setText("Đang xử lý…");
+                  ~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\MainActivity.java:317: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    all.setText("Xem tất cả  →");
+                ~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\MainActivity.java:362: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+    number.setText("" + count);
+                   ~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\SettingsActivity.java:33: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    enabled.setText("Bật nhắc cho tài khoản này");
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\SettingsActivity.java:45: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        "\n"
+        ^
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\SettingsActivity.java:47: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            + "Lịch học được nhắc theo từng buổi trong khoảng ngày áp dụng. Sửa thời gian hoặc cấu"
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\SettingsActivity.java:49: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            + "Android có thể trì hoãn nhắc khi tiết kiệm pin. Sau khi buộc dừng ứng dụng, cần mở"
+              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\SettingsActivity.java:53: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    permission.setText("Quyền thông báo hệ thống");
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\SettingsActivity.java:61: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+    test.setText("Gửi thông báo thử");
+                 ~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\java\vn\edu\studymate\ui\TaskListActivity.java:256: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                        .setText("Không tải được dữ liệu. Hãy mở lại màn hình.");
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+S:\outputs\StudyMate-HoanThien\app\src\main\res\layout\activity_login.xml:16: Warning: Hardcoded string "Xác nhận mật khẩu", should use @string resource [HardcodedText]
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/confirm_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Xác nhận mật khẩu" android:visibility="gone" android:layout_marginTop="12dp" app:endIconMode="password_toggle"><com.google.android.material.textfield.TextInputEditText android:id="@+id/confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:maxLength="128" /></com.google.android.material.textfield.TextInputLayout>
+                                                                                                                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\res\layout\activity_tasks.xml:4: Warning: Hardcoded string "Tìm công việc…", should use @string resource [HardcodedText]
+<EditText android:id="@+id/search" android:layout_width="match_parent" android:layout_height="48dp" android:background="@drawable/field_surface" android:hint="Tìm công việc…" android:textSize="14sp" android:singleLine="true" android:inputType="text" android:importantForAutofill="no"/>
+                                                                                                                                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\res\layout\activity_tasks.xml:6: Warning: Hardcoded string "Tất cả", should use @string resource [HardcodedText]
+<com.google.android.material.button.MaterialButton android:id="@+id/filter_clear" style="?attr/materialButtonOutlinedStyle" android:paddingStart="4dp" android:paddingEnd="4dp" android:minWidth="0dp" android:singleLine="true" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Tất cả" android:textSize="12sp"/>
+                                                                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\res\layout\activity_tasks.xml:7: Warning: Hardcoded string "Theo môn", should use @string resource [HardcodedText]
+<com.google.android.material.button.MaterialButton android:id="@+id/filter_subject" style="?attr/materialButtonOutlinedStyle" android:paddingStart="4dp" android:paddingEnd="4dp" android:minWidth="0dp" android:singleLine="true" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:layout_marginHorizontal="6dp" android:text="Theo môn" android:textSize="12sp"/>
+                                                                                                                                                                                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\res\layout\activity_tasks.xml:8: Warning: Hardcoded string "Bộ lọc", should use @string resource [HardcodedText]
+<com.google.android.material.button.MaterialButton android:id="@+id/filters" style="?attr/materialButtonOutlinedStyle" android:paddingStart="4dp" android:paddingEnd="4dp" android:minWidth="0dp" android:singleLine="true" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="Bộ lọc" android:textSize="12sp"/>
+                                                                                                                                                                                                                                                                                                              ~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\res\layout\activity_tasks.xml:12: Warning: Hardcoded string "+ Thêm công việc", should use @string resource [HardcodedText]
+<com.google.android.material.button.MaterialButton android:id="@+id/add" android:layout_width="match_parent" android:layout_height="52dp" android:layout_marginHorizontal="16dp" android:layout_marginVertical="4dp" android:text="+ Thêm công việc"/>
+                                                                                                                                                                                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+S:\outputs\StudyMate-HoanThien\app\src\main\res\menu\bottom_nav.xml:6: Warning: Hardcoded string "Ưu tiên", should use @string resource [HardcodedText]
+    <item android:id="@+id/nav_priority" android:icon="@drawable/ic_priority" android:title="Ưu tiên"/>
+                                                                              ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 40 warnings

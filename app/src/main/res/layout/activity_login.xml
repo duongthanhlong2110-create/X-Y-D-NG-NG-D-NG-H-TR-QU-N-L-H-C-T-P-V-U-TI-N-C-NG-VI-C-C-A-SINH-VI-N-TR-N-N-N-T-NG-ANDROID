@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center_vertical" android:padding="28dp">
+        <ImageView android:layout_width="64dp" android:layout_height="64dp" android:src="@drawable/ic_school" android:contentDescription="@string/app_name" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/app_name" android:textSize="36sp" android:textStyle="bold" android:textColor="@color/ink" android:layout_marginTop="20dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_login_text_2" android:textSize="16sp" android:layout_marginBottom="28dp" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/name_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/activity_login_hint_3" android:visibility="gone">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/name" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPersonName" android:maxLength="80" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/activity_login_hint_4" android:layout_marginTop="12dp">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textEmailAddress" android:maxLength="160" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/activity_login_hint_5" android:layout_marginTop="12dp" app:endIconMode="password_toggle">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:maxLength="128" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/confirm_box" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Xác nhận mật khẩu" android:visibility="gone" android:layout_marginTop="12dp" app:endIconMode="password_toggle"><com.google.android.material.textfield.TextInputEditText android:id="@+id/confirm" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" android:maxLength="128" /></com.google.android.material.textfield.TextInputLayout>
+        <TextView android:id="@+id/error" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#B3261E" android:accessibilityLiveRegion="polite" android:paddingTop="12dp" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/submit" android:layout_width="match_parent" android:layout_height="56dp" android:text="@string/activity_login_text_6" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/toggle" style="@style/Widget.Material3.Button.TextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_login_text_7" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activity_login_text_8" android:gravity="center" android:textColor="@color/muted" android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>
